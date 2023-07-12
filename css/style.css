@@ -15,6 +15,7 @@ header {
   height: 80px;
   background-color: #ffffff;
 }
+/* logo */
 header div img:first-child {
   max-width: 47px;
   max-height: 100%;
@@ -22,15 +23,26 @@ header div img:first-child {
 header div img:last-child {
   margin: 0 9px;
 }
+/* button campanella notifiche */
+/* 
+header .btn.show,
+.btn {
+  --bs-btn-border-width: 0px;
+} */
+
 /*          MAIN         */
 /* ?        SIDEBAR      */
-.sidebar {
-  width: 150px;
+#sidebar {
+  width: 100px;
   height: calc(100vh - 80px);
+  color: white;
+  background-image: url(../img/sidebar-bg.png);
+  background-size: cover;
+  background-color: #051e34;
 }
 
 .main-content {
-  width: calc(100% - 150px);
+  width: calc(100% - 100px);
   height: calc(100vh - 80px);
   overflow-x: auto;
 }
@@ -57,8 +69,8 @@ header div img:last-child {
 */
 
 /* *      MOBILE        */
-@media screen and (max-width: 768px) {
-  .sidebar {
+@media screen and (max-width: 991px) {
+  #sidebar {
     width: 50px;
   }
   .main-content {
