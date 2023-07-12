@@ -26,12 +26,71 @@
   </head>
   <body class="debug">
     <!-- HEADER -->
-    <header class="container-fluid d-flex">
-      <div class="flex-grow-2 box">logo</div>
-      <div class="flex-grow-1 box">cerca</div>
-      <div class="flex-grow-2 box d-flex">
-        <div class="icon px-2 box d-none d-lg-block">icon</div>
-        <div class="notifiche px-2 box">NF</div>
+    <header class="container-fluid d-flex align-items-center">
+      <!-- LOGO -->
+      <div class="box-1">
+        <img src="./img/mobile-logo.png" class="d-lg-none" alt="logo mobile" />
+
+        <img
+          src="./img/logo.svg"
+          class="d-none d-lg-block"
+          alt="logo desktop"
+        />
+      </div>
+      <!-- SEARCH -->
+      <div class="flex-grow-1">
+        <!-- SEARCH -->
+        <form class="d-flex" role="search">
+          <div class="input-group my-3">
+            <label for="basic-addon1" class="input-group-text"
+              ><i
+                class="fa-solid fa-magnifying-glass"
+                style="color: #212529"
+              ></i
+            ></label>
+            <input
+              class="form-control me-2"
+              type="search"
+              id="basic-addon1"
+              name="basic-addon1"
+              placeholder="Prova a cercare: Lezioni di Laravel"
+              aria-label="Search"
+            />
+          </div>
+        </form>
+      </div>
+      <!-- MENU FULL A DESTRA -->
+      <div class="d-flex">
+        <!-- MENU LG -->
+        <div class="icon px-2 d-none d-lg-flex align-items-center">
+          <span class="px-1">
+            <i class="fa-solid fa-list-ul" style="color: #5b5858"></i>
+          </span>
+          <span class="px-1">
+            <i class="fa-solid fa-circle-question" style="color: #5b5858"></i>
+          </span>
+          <span class="px-1">
+            <i class="fa-solid fa-ellipsis-vertical" style="color: #5b5858"></i>
+          </span>
+        </div>
+        <!-- MENU DROPDOWN  -->
+        <div class="notifiche px-2">
+          <div class="dropdown">
+            <button
+              class="btn"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fa-solid fa-bell" style="color: #ff8f00"></i>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <!-- MAIN CONTAINER -->
@@ -58,165 +117,13 @@
         <!-- MAIN MAIN-CONTAINER -->
         <div class="container-fluid py-2">
           <div class="row g-2">
-            <div class="col-md">
-              <div class="box my-2">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
-                quae placeat molestias rem quos dolor quaerat reprehenderit
-                sequi dolores soluta eius, officia temporibus voluptatibus? Cum
-                dolore nisi temporibus totam molestiae. Quaerat vitae non
-                necessitatibus nulla, rerum magnam iusto mollitia deserunt
-                dolores consectetur fugit consequuntur fuga, ducimus quasi,
-                nesciunt magni maxime veritatis at! Magnam enim consectetur
-                minima, obcaecati quae optio rerum! Cumque quo voluptates
-                necessitatibus, error quaerat debitis hic harum explicabo minus
-                tenetur. Odio repellat eligendi veritatis voluptas at
-                voluptatibus iusto consequatur reiciendis magni sequi. Odio
-                architecto nostrum necessitatibus ea dolores. Odio in aspernatur
-                illo eligendi ex expedita quo similique, et, omnis cum tempore
-                ad facere, minus repellat nesciunt culpa neque distinctio. Ad
-                accusantium possimus aliquid quidem eos deleniti, quia earum.
-                Atque doloremque in, quasi, praesentium debitis, repudiandae
-                reiciendis vitae vero nihil saepe dolorem velit odio.
-                Necessitatibus aut, quibusdam velit error dolor quae nulla quo
-                deleniti veniam sunt laboriosam molestias dignissimos! Rem
-                eligendi ab aliquam inventore sint ipsa totam? Nisi repellat
-                aliquid doloribus molestiae quidem natus excepturi eos ex sed
-                unde repudiandae dolore libero ea neque quaerat inventore
-                explicabo, illo pariatur. Nostrum aliquam a commodi expedita
-                soluta iusto porro id veritatis temporibus non perspiciatis,
-                earum tempore vitae voluptate vero laudantium doloremque facilis
-                suscipit labore amet accusamus eos. Corporis omnis qui illum?
-                Similique tempora quia eum minima delectus magnam officia,
-                voluptatum maiores omnis repellat beatae harum non impedit
-                itaque laboriosam culpa est inventore facere expedita numquam
-                ipsa, nesciunt maxime soluta explicabo. Modi! Commodi ea aut
-                ipsum, alias in ab officia corrupti odio quo aspernatur quis ut
-                adipisci impedit quisquam. Veritatis dolor quia facere officia
-                consequuntur laborum cum voluptate quaerat dicta! Deserunt,
-                assumenda! Corrupti, reprehenderit sed pariatur eos facilis
-                omnis commodi, officia tempora quos ipsam dolores excepturi
-                perferendis ad esse, ab sint! Quod laudantium accusamus
-                laboriosam rerum sed officia consequatur similique veniam nihil.
-              </div>
-              <div class="box my-2">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
-                quae placeat molestias rem quos dolor quaerat reprehenderit
-                sequi dolores soluta eius, officia temporibus voluptatibus? Cum
-                dolore nisi temporibus totam molestiae. Quaerat vitae non
-                necessitatibus nulla, rerum magnam iusto mollitia deserunt
-                dolores consectetur fugit consequuntur fuga, ducimus quasi,
-                nesciunt magni maxime veritatis at! Magnam enim consectetur
-                minima, obcaecati quae optio rerum! Cumque quo voluptates
-                necessitatibus, error quaerat debitis hic harum explicabo minus
-                tenetur. Odio repellat eligendi veritatis voluptas at
-                voluptatibus iusto consequatur reiciendis magni sequi. Odio
-                architecto nostrum necessitatibus ea dolores. Odio in aspernatur
-                illo eligendi ex expedita quo similique, et, omnis cum tempore
-                ad facere, minus repellat nesciunt culpa neque distinctio. Ad
-                accusantium possimus aliquid quidem eos deleniti, quia earum.
-                Atque doloremque in, quasi, praesentium debitis, repudiandae
-                reiciendis vitae vero nihil saepe dolorem velit odio.
-                Necessitatibus aut, quibusdam velit error dolor quae nulla quo
-                deleniti veniam sunt laboriosam molestias dignissimos! Rem
-                eligendi ab aliquam inventore sint ipsa totam? Nisi repellat
-                aliquid doloribus molestiae quidem natus excepturi eos ex sed
-                unde repudiandae dolore libero ea neque quaerat inventore
-                explicabo, illo pariatur. Nostrum aliquam a commodi expedita
-                soluta iusto porro id veritatis temporibus non perspiciatis,
-                earum tempore vitae voluptate vero laudantium doloremque facilis
-                suscipit labore amet accusamus eos. Corporis omnis qui illum?
-                Similique tempora quia eum minima delectus magnam officia,
-                voluptatum maiores omnis repellat beatae harum non impedit
-                itaque laboriosam culpa est inventore facere expedita numquam
-                ipsa, nesciunt maxime soluta explicabo. Modi! Commodi ea aut
-                ipsum, alias in ab officia corrupti odio quo aspernatur quis ut
-                adipisci impedit quisquam. Veritatis dolor quia facere officia
-                consequuntur laborum cum voluptate quaerat dicta! Deserunt,
-                assumenda! Corrupti, reprehenderit sed pariatur eos facilis
-                omnis commodi, officia tempora quos ipsam dolores excepturi
-                perferendis ad esse, ab sint! Quod laudantium accusamus
-                laboriosam rerum sed officia consequatur similique veniam nihil.
-              </div>
+            <div class="col-md box container-fluid">
+              <div class="box py-2"></div>
+              <div class="box py-2"></div>
             </div>
-            <div class="col-md-4">
-              <div class="box my-2">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
-                quae placeat molestias rem quos dolor quaerat reprehenderit
-                sequi dolores soluta eius, officia temporibus voluptatibus? Cum
-                dolore nisi temporibus totam molestiae. Quaerat vitae non
-                necessitatibus nulla, rerum magnam iusto mollitia deserunt
-                dolores consectetur fugit consequuntur fuga, ducimus quasi,
-                nesciunt magni maxime veritatis at! Magnam enim consectetur
-                minima, obcaecati quae optio rerum! Cumque quo voluptates
-                necessitatibus, error quaerat debitis hic harum explicabo minus
-                tenetur. Odio repellat eligendi veritatis voluptas at
-                voluptatibus iusto consequatur reiciendis magni sequi. Odio
-                architecto nostrum necessitatibus ea dolores. Odio in aspernatur
-                illo eligendi ex expedita quo similique, et, omnis cum tempore
-                ad facere, minus repellat nesciunt culpa neque distinctio. Ad
-                accusantium possimus aliquid quidem eos deleniti, quia earum.
-                Atque doloremque in, quasi, praesentium debitis, repudiandae
-                reiciendis vitae vero nihil saepe dolorem velit odio.
-                Necessitatibus aut, quibusdam velit error dolor quae nulla quo
-                deleniti veniam sunt laboriosam molestias dignissimos! Rem
-                eligendi ab aliquam inventore sint ipsa totam? Nisi repellat
-                aliquid doloribus molestiae quidem natus excepturi eos ex sed
-                unde repudiandae dolore libero ea neque quaerat inventore
-                explicabo, illo pariatur. Nostrum aliquam a commodi expedita
-                soluta iusto porro id veritatis temporibus non perspiciatis,
-                earum tempore vitae voluptate vero laudantium doloremque facilis
-                suscipit labore amet accusamus eos. Corporis omnis qui illum?
-                Similique tempora quia eum minima delectus magnam officia,
-                voluptatum maiores omnis repellat beatae harum non impedit
-                itaque laboriosam culpa est inventore facere expedita numquam
-                ipsa, nesciunt maxime soluta explicabo. Modi! Commodi ea aut
-                ipsum, alias in ab officia corrupti odio quo aspernatur quis ut
-                adipisci impedit quisquam. Veritatis dolor quia facere officia
-                consequuntur laborum cum voluptate quaerat dicta! Deserunt,
-                assumenda! Corrupti, reprehenderit sed pariatur eos facilis
-                omnis commodi, officia tempora quos ipsam dolores excepturi
-                perferendis ad esse, ab sint! Quod laudantium accusamus
-                laboriosam rerum sed officia consequatur similique veniam nihil.
-              </div>
-              <div class="box my-2">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
-                quae placeat molestias rem quos dolor quaerat reprehenderit
-                sequi dolores soluta eius, officia temporibus voluptatibus? Cum
-                dolore nisi temporibus totam molestiae. Quaerat vitae non
-                necessitatibus nulla, rerum magnam iusto mollitia deserunt
-                dolores consectetur fugit consequuntur fuga, ducimus quasi,
-                nesciunt magni maxime veritatis at! Magnam enim consectetur
-                minima, obcaecati quae optio rerum! Cumque quo voluptates
-                necessitatibus, error quaerat debitis hic harum explicabo minus
-                tenetur. Odio repellat eligendi veritatis voluptas at
-                voluptatibus iusto consequatur reiciendis magni sequi. Odio
-                architecto nostrum necessitatibus ea dolores. Odio in aspernatur
-                illo eligendi ex expedita quo similique, et, omnis cum tempore
-                ad facere, minus repellat nesciunt culpa neque distinctio. Ad
-                accusantium possimus aliquid quidem eos deleniti, quia earum.
-                Atque doloremque in, quasi, praesentium debitis, repudiandae
-                reiciendis vitae vero nihil saepe dolorem velit odio.
-                Necessitatibus aut, quibusdam velit error dolor quae nulla quo
-                deleniti veniam sunt laboriosam molestias dignissimos! Rem
-                eligendi ab aliquam inventore sint ipsa totam? Nisi repellat
-                aliquid doloribus molestiae quidem natus excepturi eos ex sed
-                unde repudiandae dolore libero ea neque quaerat inventore
-                explicabo, illo pariatur. Nostrum aliquam a commodi expedita
-                soluta iusto porro id veritatis temporibus non perspiciatis,
-                earum tempore vitae voluptate vero laudantium doloremque facilis
-                suscipit labore amet accusamus eos. Corporis omnis qui illum?
-                Similique tempora quia eum minima delectus magnam officia,
-                voluptatum maiores omnis repellat beatae harum non impedit
-                itaque laboriosam culpa est inventore facere expedita numquam
-                ipsa, nesciunt maxime soluta explicabo. Modi! Commodi ea aut
-                ipsum, alias in ab officia corrupti odio quo aspernatur quis ut
-                adipisci impedit quisquam. Veritatis dolor quia facere officia
-                consequuntur laborum cum voluptate quaerat dicta! Deserunt,
-                assumenda! Corrupti, reprehenderit sed pariatur eos facilis
-                omnis commodi, officia tempora quos ipsam dolores excepturi
-                perferendis ad esse, ab sint! Quod laudantium accusamus
-                laboriosam rerum sed officia consequatur similique veniam nihil.
-              </div>
+            <div class="col-md-4 box container-fluid">
+              <div class="box py-2"></div>
+              <div class="box py-2"></div>
             </div>
           </div>
         </div>

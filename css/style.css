@@ -12,10 +12,15 @@
 
 /* ?        HEADER       */
 header {
-  padding: 30px 0;
+  height: 80px;
+  background-color: #ffffff;
 }
-header .box {
-  padding: 0 4px;
+header div img:first-child {
+  max-width: 47px;
+  max-height: 100%;
+}
+header div img:last-child {
+  margin: 0 9px;
 }
 /*          MAIN         */
 /* ?        SIDEBAR      */
@@ -28,6 +33,21 @@ header .box {
   width: calc(100% - 150px);
   height: calc(100vh - 80px);
   overflow-x: auto;
+}
+
+/* 
+# *********************************
+# *         MODIFICATORI          *
+# *********************************
+*/
+
+.form-control {
+  border: 0;
+  background-color: #e5e5e5;
+}
+.input-group-text {
+  background-color: #e5e5e5;
+  border: 0;
 }
 
 /* 
