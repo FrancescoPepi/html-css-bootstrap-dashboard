@@ -1,0 +1,48 @@
+/* 
+# ***************************
+# *         GENERIC         *
+# ***************************
+*/
+
+/* 
+# ***************************
+# *         SECTION         *
+# ***************************
+*/
+
+/* ?        HEADER       */
+header {
+  height: 100px;
+}
+
+/*          MAIN         */
+/* ?        SIDEBAR      */
+.sidebar {
+  width: 200px;
+  height: calc(100vh - 100px);
+}
+
+.main-content {
+  width: 100%;
+  height: calc(100vh - 100px);
+  overflow-x: auto;
+}
+
+/* 
+# ***************************
+# *         DEBUG           *
+# ***************************
+*/
+
+.debug * {
+  background-color: yellow;
+  min-height: 10px;
+}
+
+.debug .sidebar {
+  background-color: red;
+}
+
+.debug .main-content {
+  background-color: blue;
+}
