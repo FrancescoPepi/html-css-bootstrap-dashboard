@@ -105,6 +105,11 @@ main {
   border-top-width: 1px;
 }
 
+.accordion-item:first-of-type {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
 /* 
 # *********************************
 # *         MEDIA QUERY           *
@@ -127,7 +132,7 @@ main {
   }
 }
 /* *      DESKTOP IN SU      */
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 768px) {
   #col-tab-primary {
     width: 50% !important;
   }
