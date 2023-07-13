@@ -110,6 +110,10 @@ main {
   border-top-right-radius: 0;
 }
 
+.offcanvas.offcanvas-end {
+  width: 100%;
+}
+
 /* 
 # *********************************
 # *         MEDIA QUERY           *
@@ -135,6 +139,9 @@ main {
 @media screen and (min-width: 768px) {
   #col-tab-primary {
     width: 50% !important;
+  }
+  .offcanvas.offcanvas-end {
+    width: 50%;
   }
 }
 
