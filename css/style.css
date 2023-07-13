@@ -3,7 +3,10 @@
 # *         GENERIC         *
 # ***************************
 */
-
+a {
+  text-decoration: none;
+  color: currentColor;
+}
 /* 
 # ***************************
 # *         SECTION         *
@@ -24,6 +27,7 @@ header div img:last-child {
   margin: 0 9px;
 }
 /* button campanella notifiche */
+
 /* 
 header .btn.show,
 .btn {
@@ -31,20 +35,31 @@ header .btn.show,
 } */
 
 /*          MAIN         */
+main {
+  height: calc(100vh - 80px);
+}
 /* ?        SIDEBAR      */
 #sidebar {
-  width: 100px;
-  height: calc(100vh - 80px);
+  width: 150px;
+  height: 100%;
+
   color: white;
   background-image: url(../img/sidebar-bg.png);
   background-size: cover;
   background-color: #051e34;
 }
 
-.main-content {
-  width: calc(100% - 100px);
-  height: calc(100vh - 80px);
+/* ?        MAIN-CONTENT      */
+#main-content {
+  width: calc(100% - 150px);
+  height: 100%;
   overflow-x: auto;
+}
+
+/* MAIN-HEADER */
+#main-header {
+  background-color: #1b72e8;
+  color: white;
 }
 
 /* 
@@ -52,7 +67,16 @@ header .btn.show,
 # *         MODIFICATORI          *
 # *********************************
 */
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "";
+  font-family: FontAwesome;
+  padding-top: 3px;
+}
 
+.breadcrumb-item + .breadcrumb-item.active::before {
+  content: "\f101";
+  color: white;
+}
 .form-control {
   border: 0;
   background-color: #e5e5e5;
@@ -60,6 +84,15 @@ header .btn.show,
 .input-group-text {
   background-color: #e5e5e5;
   border: 0;
+}
+
+#main-header .badge {
+  background-color: #165bba;
+  --bs-badge-font-weight: 0;
+}
+
+#breadcrumb-menu li#plus-group {
+  display: none;
 }
 
 /* 
@@ -73,8 +106,14 @@ header .btn.show,
   #sidebar {
     width: 50px;
   }
-  .main-content {
+  #main-content {
     width: calc(100% - 50px);
+  }
+  #breadcrumb-menu li:not(:first-child):not(#plus-group) {
+    display: none !important ;
+  }
+  #breadcrumb-menu li#plus-group {
+    display: inline-block !important ;
   }
 }
 
@@ -89,15 +128,15 @@ header .btn.show,
   min-height: 10px;
 }
 
-.debug .sidebar {
+.debug #sidebar {
   background-color: lightcoral;
 }
 
-.debug .main-content {
+.debug #main-content {
   background-color: lightblue;
 }
 
-.debug .main-content .container-fluid {
+.debug #main-content .container-fluid {
   min-height: 20px;
   background-color: bisque;
   border: 1px dashed black;
