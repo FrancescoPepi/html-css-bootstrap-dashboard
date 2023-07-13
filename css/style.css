@@ -83,11 +83,11 @@ main {
   content: "\f101";
   color: white;
 }
-.form-control {
+header .form-control {
   border: 0;
   background-color: #e5e5e5;
 }
-.input-group-text {
+header .input-group-text {
   background-color: #e5e5e5;
   border: 0;
 }
