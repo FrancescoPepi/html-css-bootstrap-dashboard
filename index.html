@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Bootstrap Dashboard</title>
   </head>
-  <body class="debug">
+  <body class="">
     <!-- HEADER -->
     <header class="container-fluid d-flex align-items-center">
       <!-- LOGO -->
@@ -194,11 +194,255 @@
           </div>
         </div>
 
-        <!-- MAIN MAIN-CONTAINER -->
-        <div class="container-fluid">
+        <!-- MAIN MAIN-BODY MAIN-CONTAINER -->
+        <div id="main-body" class="container-fluid pt-3">
           <div class="row">
             <div class="col-md box container-fluid">
-              <div class="box my-2"></div>
+              <!-- TABELLA "PROSSIME CLASSI" -->
+              <div class="my-2">
+                <div class="card">
+                  <h4 class="card-header pb-3">Prossime classi</h4>
+                  <div class="card-body">
+                    <!-- TABELLA -->
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col">Nome</th>
+                          <th scope="col">Data inizio</th>
+                          <th scope="col">ROI</th>
+                          <th scope="col">Stato</th>
+                          <th scope="col">Azioni</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <!-- RIGA 1 -->
+                        <tr>
+                          <td scope="row">
+                            <img
+                              src="./img/class-avatar.jpg"
+                              alt="icon class"
+                            />
+                            <span>Classe 75 </span>
+                          </td>
+                          <td>15 Feb 2021</td>
+                          <td>20%</td>
+                          <td><span class="badge bg-success">Done</span></td>
+                          <td>
+                            <button type="button" class="btn btn-outline-dark">
+                              <i
+                                class="fa-solid fa-pencil"
+                                style="color: #6c757d"
+                              ></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-dark">
+                              <i
+                                class="fa-solid fa-trash-can"
+                                style="color: #6c757d"
+                              ></i>
+                            </button>
+                          </td>
+                        </tr>
+
+                        <!-- RIGA 2 -->
+                        <tr>
+                          <td scope="row">
+                            <img
+                              src="./img/class-avatar.jpg"
+                              alt="icon class"
+                            />
+                            <span>Classe 76 </span>
+                          </td>
+                          <td>16 Feb 2021</td>
+                          <td>20%</td>
+                          <td><span class="badge bg-success">Done</span></td>
+                          <td>
+                            <button type="button" class="btn btn-outline-dark">
+                              <i
+                                class="fa-solid fa-pencil"
+                                style="color: #6c757d"
+                              ></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-dark">
+                              <i
+                                class="fa-solid fa-trash-can"
+                                style="color: #6c757d"
+                              ></i>
+                            </button>
+                          </td>
+                        </tr>
+
+                        <!-- RIGA 3 -->
+                        <tr>
+                          <td scope="row">
+                            <img
+                              src="./img/class-avatar.jpg"
+                              alt="icon class"
+                            />
+                            <span>Classe 77 </span>
+                          </td>
+                          <td>17 Feb 2021</td>
+                          <td>20%</td>
+                          <td><span class="badge bg-warning">Process</span></td>
+                          <td>
+                            <button type="button" class="btn btn-outline-dark">
+                              <i
+                                class="fa-solid fa-pencil"
+                                style="color: #6c757d"
+                              ></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-dark">
+                              <i
+                                class="fa-solid fa-trash-can"
+                                style="color: #6c757d"
+                              ></i>
+                            </button>
+                          </td>
+                        </tr>
+
+                        <!-- RIGA 4 -->
+                        <tr>
+                          <td scope="row">
+                            <img
+                              src="./img/class-avatar.jpg"
+                              alt="icon class"
+                            />
+                            <span>Classe 78 </span>
+                          </td>
+                          <td>18 Feb 2021</td>
+                          <td>20%</td>
+                          <td><span class="badge bg-success">Done</span></td>
+                          <td>
+                            <button type="button" class="btn btn-outline-dark">
+                              <i
+                                class="fa-solid fa-pencil"
+                                style="color: #6c757d"
+                              ></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-dark">
+                              <i
+                                class="fa-solid fa-trash-can"
+                                style="color: #6c757d"
+                              ></i>
+                            </button>
+                          </td>
+                        </tr>
+
+                        <!-- RIGA 5 -->
+                        <tr>
+                          <td scope="row">
+                            <img
+                              src="./img/class-avatar.jpg"
+                              alt="icon class"
+                            />
+                            <span>Classe 79 </span>
+                          </td>
+                          <td>19 Feb 2021</td>
+                          <td>20%</td>
+                          <td><span class="badge bg-danger">Failed</span></td>
+                          <td>
+                            <button type="button" class="btn btn-outline-dark">
+                              <i
+                                class="fa-solid fa-pencil"
+                                style="color: #6c757d"
+                              ></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-dark">
+                              <i
+                                class="fa-solid fa-trash-can"
+                                style="color: #6c757d"
+                              ></i>
+                            </button>
+                          </td>
+                        </tr>
+
+                        <!-- RIGA 6 -->
+                        <tr>
+                          <td scope="row">
+                            <img
+                              src="./img/class-avatar.jpg"
+                              alt="icon class"
+                            />
+                            <span>Classe 80 </span>
+                          </td>
+                          <td>80 Feb 2021</td>
+                          <td>20%</td>
+                          <td><span class="badge bg-success">Done</span></td>
+                          <td>
+                            <button type="button" class="btn btn-outline-dark">
+                              <i
+                                class="fa-solid fa-pencil"
+                                style="color: #6c757d"
+                              ></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-dark">
+                              <i
+                                class="fa-solid fa-trash-can"
+                                style="color: #6c757d"
+                              ></i>
+                            </button>
+                          </td>
+                        </tr>
+
+                        <!-- RIGA 7 -->
+                        <tr>
+                          <td scope="row">
+                            <img
+                              src="./img/class-avatar.jpg"
+                              alt="icon class"
+                            />
+                            <span>Classe 81 </span>
+                          </td>
+                          <td>81 Feb 2021</td>
+                          <td>20%</td>
+                          <td><span class="badge bg-danger">Failed</span></td>
+                          <td>
+                            <button type="button" class="btn btn-outline-dark">
+                              <i
+                                class="fa-solid fa-pencil"
+                                style="color: #6c757d"
+                              ></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-dark">
+                              <i
+                                class="fa-solid fa-trash-can"
+                                style="color: #6c757d"
+                              ></i>
+                            </button>
+                          </td>
+                        </tr>
+
+                        <!-- RIGA 8 -->
+                        <tr>
+                          <td scope="row">
+                            <img
+                              src="./img/class-avatar.jpg"
+                              alt="icon class"
+                            />
+                            <span>Classe 82 </span>
+                          </td>
+                          <td>82 Feb 2021</td>
+                          <td>20%</td>
+                          <td><span class="badge bg-success">Done</span></td>
+                          <td>
+                            <button type="button" class="btn btn-outline-dark">
+                              <i
+                                class="fa-solid fa-pencil"
+                                style="color: #6c757d"
+                              ></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-dark">
+                              <i
+                                class="fa-solid fa-trash-can"
+                                style="color: #6c757d"
+                              ></i>
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
               <div class="box my-2"></div>
             </div>
             <div class="col-md-4 box container-fluid">

@@ -62,6 +62,12 @@ main {
   color: white;
 }
 
+/* ?        MAIN-BODY      */
+
+.table img {
+  width: 25px;
+}
+
 /* 
 # *********************************
 # *         MODIFICATORI          *
