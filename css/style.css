@@ -107,7 +107,7 @@ main {
 # *********************************
 */
 
-/* *      MOBILE        */
+/* *      MOBILE & TABLET  (DA TABLET A MOBILE)    */
 @media screen and (max-width: 991px) {
   #sidebar {
     width: 50px;
@@ -120,6 +120,12 @@ main {
   }
   #breadcrumb-menu li#plus-group {
     display: inline-block !important ;
+  }
+}
+/* *      DESKTOP IN SU      */
+@media screen and (min-width: 991px) {
+  #col-tab-primary {
+    width: 50% !important;
   }
 }
 
