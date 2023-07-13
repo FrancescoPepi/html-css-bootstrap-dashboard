@@ -101,6 +101,10 @@ main {
   display: none;
 }
 
+.list-group-item + .list-group-item {
+  border-top-width: 1px;
+}
+
 /* 
 # *********************************
 # *         MEDIA QUERY           *
